@@ -1,0 +1,26 @@
+/*安装git完成后全局定义*/
+$ git config --global user.name "Your Name"          //用户名
+$ git config --global user.email "email@example.com" //用户邮箱
+
+/*创建版本库*/
+$ mkdir learngit    //创建文件夹
+$ cd learngit   //更改路径
+$ pwd   //显示当前目录
+
+$ git init  //把当前目录变为Git可以管理的仓库
+
+$ git add readme.txt    //将所有修改放到暂存区（Stage）
+可以在 commit 命令之前多次 add 不同的文件
+
+$ git commit -m "说明"   //将修改由暂存区（Stage）提交到分支master
+commit 命令可以一次提交很多不同的文件
+
+/*时光机穿梭*/
+$ git status    //查看当前状态
+    1.若没有文件的修改以及文件的新增：nothing to commit, working tree clean
+    2.若有文件被修改，且没有使用add命令（没有上传到Stage）：Changes not staged for commit
+    3.若有文件被修改，且使用add命令（已经上传到Stage）：Changes to be committed
+
+$ git diff readme.txt   //查看区别
+    
+    
