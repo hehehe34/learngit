@@ -22,5 +22,7 @@ $ git status    //查看当前状态
     3.若有文件被修改，且使用add命令（已经上传到Stage）：Changes to be committed
 
 $ git diff readme.txt   //查看区别
+注意：当文件add以后便看不到diff了
+
     
     
